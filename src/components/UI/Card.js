@@ -1,6 +1,11 @@
-import "./Card.css";
-function Card(porps) {
-  const clases = `card ${porps.className}`;
-  return <div className={clases}>{porps.children}</div>;
-}
+import React from 'react';
+
+import './Card.css';
+
+const Card = (props) => {
+  const classes = 'card ' + props.className;
+
+  return <div className={classes}>{props.children}</div>;
+};
+
 export default Card;
